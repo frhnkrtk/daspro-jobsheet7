@@ -15,9 +15,10 @@ public class SiakadFor11 {
             }
             if (nilai < terendah) {
             }
-            if (nilai >= 60) {
-                lulus++;
         }
+    System.out.println("Nilai tertinggi: " + tertinggi);
+    System.out.println("Nilai terendah: " + terendah);
+         
     }
     
 }
