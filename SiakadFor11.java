@@ -14,11 +14,20 @@ public class SiakadFor11 {
                 tertinggi = nilai;
             }
             if (nilai < terendah) {
+                terendah = nilai;
+            }
+            if (nilai >= 60) {
+                System.out.println("Lulus");
+                lulus++;
+            } else {
+                System.out.println("Mahasiswa tidak lulus");
+                tidakLulus++;
             }
         }
-    System.out.println("Nilai tertinggi: " + tertinggi);
-    System.out.println("Nilai terendah: " + terendah);
-         
+        System.out.println("Nilai tertinggi: " + tertinggi);
+        System.out.println("Nilai terendah: " + terendah);
+        System.out.println("Jumlah mahasiswa lulus (>= 60) :" + lulus);
+        System.out.println("Jumlah mahasiswa tidak lulus (< 60) : " + tidakLulus);
     }
     
 }
